@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Android Test</string>
+    <string name="approved_card_part1">Tienes una tarjeta Platinum</string>
+    <string name="approved_card_part2">aprobada de $4,000</string>
+    <string name="choose_message">Selecciona la marca de tarjeta que prefieras</string>
+    <string name="accept_card">Aceptar tarjeta</string>
+    <string name="visa">Visa</string>
+    <string name="mastercard">Mastercard</string>
+    <string name="mastercard_platinum_description">Obtén el beneficio y prestigio que ofrece una tarjeta Mastercard, junto al más variado financiamiento, a través de la exclusiva Mastercard Platinum.</string>
+    <string name="mastercard_platinum_title">Mastercard Platinum</string>
+    <string name="miles_accrual">Acumulación de millas</string>
+    <string name="purchase_protection">Protección de compras</string>
+    <string name="pacificcard_box">PacifiCard Box</string>
+    <string name="box">Box</string>
+    <string name="pacificard">PacifiCard</string>
+    <string name="protection_of">Protección de</string>
+    <string name="purchase">compras</string>
+    <string name="know_more_benefits">Conoce más beneficios</string>
+</resources>
