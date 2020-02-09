@@ -1,7 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/lyBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_left_white_48dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmation"
+                android:textColor="@color/colorWhite"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/ic_more_horiz_white_24dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lyHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTransactionalCodeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transactional_code"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/code_transaction_notification"
+                    android:textColor="@color/colorLightGray"/>
+
+                <TextView
+                    android:id="@+id/tvDestinationEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorLightGray"
+                    android:text="@string/sample_email"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_mail_outline_bluetwo_48dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/pin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/lyHeader"
+            android:layout_marginTop="40dp">
+
+            <EditText android:id="@+id/etPinFirst"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.PinEditText"
+                app:backgroundTint="@color/colorPrimary"
+                android:text="5"
+                android:textSize="32sp"/>
+
+            <EditText android:id="@+id/etPinSecond"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.PinEditText"
+                app:backgroundTint="@color/colorPrimary"
+                android:text="4"
+                android:textSize="32sp"/>
+
+            <EditText android:id="@+id/etPinThird"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.PinEditText"
+                app:backgroundTint="@color/colorPrimary"
+                android:text="3"
+                android:textSize="32sp"/>
+
+            <EditText android:id="@+id/etPinForth"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.PinEditText"
+                app:backgroundTint="@color/colorPrimary"
+                android:text="7"
+                android:textSize="32sp"/>
+
+            <EditText android:id="@+id/etPinFifth"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.PinEditText"
+                app:backgroundTint="@color/colorPrimary"
+                android:text="8"
+                android:textSize="32sp"/>
+
+            <EditText android:id="@+id/etPinSixth"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.PinEditText"
+                app:backgroundTint="@color/colorPrimary"
+                android:text="9"
+                android:textSize="32sp"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText android:id="@+id/etPinHidden"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:maxLength="5"
+        android:textColor="#00000000"
+        android:inputType="number"/>
+</LinearLayout>

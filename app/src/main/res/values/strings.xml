@@ -16,4 +16,9 @@
     <string name="protection_of">Protección de</string>
     <string name="purchase">compras</string>
     <string name="know_more_benefits">Conoce más beneficios</string>
+    <string name="confirmation">Confirmación</string>
+    <string name="back">Atrás</string>
+    <string name="transactional_code">Clave transaccional</string>
+    <string name="code_transaction_notification">Hemos enviado una clave al correo electrónico que registraste:</string>
+    <string name="sample_email">jxxxxxxx@me.com</string>
 </resources>
